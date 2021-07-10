@@ -20,6 +20,10 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  recoverLogin(){
+    this.router.navigate(['/recuperar-senha']);
+  }
+
   registerUser() {
     this.router.navigate(['/cadastro-usuario']);
   }

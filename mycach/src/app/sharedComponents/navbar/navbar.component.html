@@ -1,1 +1,21 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <!-- Menu responsivo mobile -->
+    <span class="navbar-toogle" id="mobile">
+        <mat-icon>menu</mat-icon>
+    </span>
+
+    <!--Menu responsivo para navegadores-->
+    <span class="logo">
+        <img src="../../../assets/img/mycash.png" alt="">
+    </span>
+
+    <!-- lista de caminhos que estao no menu -->
+    <ul id="desktop">
+        <li>
+            <a routerLink="/relatorio-despesa">Relatorio de Despesas</a>
+        </li>
+        <li>
+            <a routerLink="/relatorio-receita">Relatorio de Receitas</a>
+        </li>
+    </ul>
+</nav>

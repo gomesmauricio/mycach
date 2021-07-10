@@ -18,6 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { NotFoundComponent } from './sharedComponents/not-found/not-found.component';
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import {MatButtonModule} from '@angular/material/button';
     RecuperarSenhaComponent,
     DashboardComponent,
     RelatorioDespesaComponent,
-    RelatorioReceitaComponent
+    RelatorioReceitaComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     MatCardModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

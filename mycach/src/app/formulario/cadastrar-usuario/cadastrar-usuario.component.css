@@ -42,5 +42,16 @@
     margin: 120px;
   }
   
+  .button-cancel{
+    background-color: #ff0000;
+    color: #ffff;
+  }
+  .button-save{
+    background-color: #00934e;
+    color: #ffff;
+  }
+
+  
+  
   
     

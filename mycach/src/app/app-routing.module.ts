@@ -8,11 +8,12 @@ import { RelatorioReceitaComponent } from './receita/relatorio-receita/relatorio
 import { CadastrarUsuarioComponent } from './formulario/cadastrar-usuario/cadastrar-usuario.component';
 import { RecuperarSenhaComponent } from './formulario/recuperar-senha/recuperar-senha.component';
 import { CadastroComponent } from './formulario/cadastros/cadastro.component';
+import { AuthGuard } from './service/auth.guard';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
-  {path: 'dashboard', component: DashboardComponent},
+  {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
   {path: 'relatorio-despesa', component: RelatorioDespesaComponent},
   {path: 'relatorio-receita', component: RelatorioReceitaComponent},
   {path: 'cadastro-usuario', component: CadastrarUsuarioComponent},

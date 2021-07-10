@@ -1,6 +1,9 @@
 :host{
   display: flex;
   justify-content: center;
+  background: #1b38bd;
+  background: -webkit-linear-gradient(to right, #00934e, #67cf43, #fadf1a);
+  background: linear-gradient(to right, #00934e, #67cf43, #fadf1f);
 }
 
 .example-card {
@@ -39,7 +42,11 @@
 }
 
 .section-container {
-  margin: 120px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

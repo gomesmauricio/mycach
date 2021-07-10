@@ -12,6 +12,7 @@ import { CadastrarUsuarioComponent } from './formulario/cadastrar-usuario/cadast
 import { RelatorioDespesaComponent } from './despesa/relatorio-despesa/relatorio-despesa.component';
 import { RelatorioReceitaComponent } from './receita/relatorio-receita/relatorio-receita.component';
 import { RecuperarSenhaComponent } from './formulario/recuperar-senha/recuperar-senha.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //Materail Dessign modules
 import {MatCardModule} from '@angular/material/card';
@@ -35,6 +36,8 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatCardModule,
     MatInputModule,
     MatButtonModule
